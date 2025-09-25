@@ -20,11 +20,13 @@ CREATE TABLE FictionBook(
     FOREIGN KEY(AuthorID) REFERENCES Author(AuthorID)
 );
 
+-- Q.3.3
 INSERT INTO Author(AuthorName, AuthorEmail)
 VALUES	('Thabo Bless', 'thabo@yahoo.com');
 
 INSERT INTO FictionBook(BookTitle, AuthorID, PublicationDate)
 VALUES	('Into The Darkness', 1, '2025-02-14');
 
+-- Test
 SELECT * FROM Author;
 SELECT * FROM FictionBook;
